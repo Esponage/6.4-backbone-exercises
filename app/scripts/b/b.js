@@ -1,4 +1,24 @@
+import ContactCollection from 'b/models/b-contact-collection';
+import CreateContactView from 'b/view/b-contact-view';
+
+window.App = {};
 $(document).ready(function(){
   // prepend the contents of `app/templates/application.hbs` into `body`
-  $('#container').append(JST['b/b']());
-});
+
+App.contact = new ContactCollection();
+
+window.createContactView = new CreateContactView();
+  $('#container').append(createContactView.render().el);
+
+
+
+  $('.submit-button').on('click', function(){
+     console.log(App.contact.fetch());
+   });
+
+   function renderContact(display) {
+    // $('.js-people').append(JST.person(person.toJSON()));
+      $('.contact-container').append(JST.create-contact(create-contact.toJSON()));
+    }
+
+ });

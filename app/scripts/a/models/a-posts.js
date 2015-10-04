@@ -3,7 +3,7 @@ var Posts = Backbone.Model.extend({
 
   defaults: {
     title: "",
-    body: "",
+    post: "",
 
   }
 });
