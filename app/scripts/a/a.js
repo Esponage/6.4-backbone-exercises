@@ -17,7 +17,6 @@ window.createPostsView = new CreatePostsView();
    });
 
    function renderPosts(display) {
-    // $('.js-people').append(JST.person(person.toJSON()));
       $('.posts-container').append(JST.create-post(create-post.toJSON()));
     }
 

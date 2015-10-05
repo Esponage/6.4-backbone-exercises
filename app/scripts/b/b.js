@@ -16,9 +16,8 @@ window.createContactView = new CreateContactView();
      console.log(App.contact.fetch());
    });
 
-   function renderContact(display) {
-    // $('.js-people').append(JST.person(person.toJSON()));
-      $('.contact-container').append(JST.create-contact(create-contact.toJSON()));
-    }
+  //  function renderContact(display) {
+  //     $('.contact-container').append(JST.create-contact(create-contact.toJSON()));
+  //   }
 
  });
